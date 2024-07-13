@@ -65,6 +65,7 @@ write_data_file <- function(data, file_path) {
 }
 
 .handle_excel <- function(file_path) {
+  install.packages("readxl")
   library(readxl)
   data <- readxl::read_excel(file_path)
   class(data) <- "data.frame"
@@ -72,17 +73,20 @@ write_data_file <- function(data, file_path) {
 }
 
 .write_excel <- function(data, file_path) {
+  install.packages("openxlsx")
   library(openxlsx)
   openxlsx::write.xlsx(data, file_path)
 }
 
 .handle_json <- function(file_path) {
+  install.packages("jsonlite")
   library(jsonlite)
   data <- fromJSON(file_path)
   return(data)
 }
 
 .write_json <- function(data, file_path) {
+  install.packages("jsonlite")
   library(jsonlite)
   jsonlite::write_json(data, file_path)
 }
