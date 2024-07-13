@@ -1,0 +1,16 @@
+Package: Exercise6
+Type: Package
+Title: ReaderAndWriter
+Version: 1.0.0
+Author: Simon Gerloff
+Maintainer: Simon Gerloff <simon.gerloff@campus.lmu.de>
+Description: Read and write .csv, .tsv, .xlsx, .xls, .json and rds files with one function.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Suggests: 
+    roxygen2,
+    testthat (>= 3.0.0)
+Imports: readxl, jsonlite, openxlsx
+Config/testthat/edition: 3
