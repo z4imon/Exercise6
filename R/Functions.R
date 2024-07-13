@@ -8,6 +8,7 @@
 #' # Basic example
 #' table <- read_data_file("C:/Users/name/Desktop/data/Data.csv")
 #' reads the data from the specified path.
+#' @export
 read_data_file <- function(file_path) {
 
   file_extension <- tools::file_ext(file_path)
@@ -34,6 +35,7 @@ read_data_file <- function(file_path) {
 #' # Basic example
 #' write_data_file(data = data, file_path = "C:/Users/name/Desktop/data/Data.csv")
 #' writes the data table to the specified path in the specified format.
+#' @export
 write_data_file <- function(data, file_path) {
 
   file_extension <- tools::file_ext(file_path)
